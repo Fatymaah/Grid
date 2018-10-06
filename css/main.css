@@ -1,0 +1,37 @@
+body{
+	background: #000;
+}
+
+.site{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: auto 1fr 1fr;
+	grid-template-areas: "title titles titl" "main header header" "main sidebar footer";
+
+}
+.page-title{
+	grid-area: title;
+	color: #fff;
+	background: #ccc;
+}
+.masthead{
+	grid-area: main;
+	background: red;
+}
+.type{
+	grid-area: titles;
+	background: orange;
+
+}
+@media screeen and (min-width: 1024px){
+.page-title{
+		width: 100%;
+		height: auto;
+		
+	}
+.type{
+		width: 100%;
+		height: auto;
+	}
+
+}
